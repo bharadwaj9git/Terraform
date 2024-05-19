@@ -36,7 +36,7 @@ output "l" {
   value = var.map["course"]
 }
 
-#tfvars
+
 variable "Y" {}
  output "Y" {
    value = var.Y
