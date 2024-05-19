@@ -7,3 +7,15 @@ variable "x" {
 output "x" {
   value = var.x
 }
+# lists
+variable "list" {
+  default = [10,
+  "hai",
+  true
+  ]
+}
+
+output "list" {
+  value = var.list
+}
+
