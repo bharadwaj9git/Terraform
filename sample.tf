@@ -37,9 +37,7 @@ output "l" {
 }
 
 #tfvars
-variable "y" {
-
-}
- output "yvalue" {
-   value = var.y
+variable "Y" {}
+ output "Y" {
+   value = var.Y
  }
