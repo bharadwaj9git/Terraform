@@ -19,3 +19,8 @@ output "list" {
   value = var.list
 }
 
+output "list2" {
+  value = var.list[2]
+}
+
+
