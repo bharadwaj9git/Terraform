@@ -5,3 +5,4 @@ resource "aws_instance" "front_end" {
   tags = {
     Name = "frontend_instance"
   }
+}
