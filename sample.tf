@@ -23,4 +23,15 @@ output "list2" {
   value = var.list[2]
 }
 
+# map variable
 
+variable "map" {
+  default = {
+    course = "DevOps"
+     fruit = "Apple"
+}
+}
+
+output "l" {
+  value = var.map["course"]
+}
