@@ -16,7 +16,7 @@ resource "aws_instance" "back_end" {
   }
 }
 
-resource "aws_instance" "front_end" {
+resource "aws_instance" "mysql" {
   ami           = "ami-090252cbe067a9e58"
   instance_type = "t3.small"
 
