@@ -35,3 +35,11 @@ variable "map" {
 output "l" {
   value = var.map["course"]
 }
+
+#tfvars
+variable "y" {
+
+}
+ output "yvalue" {
+   value = var.y
+ }
