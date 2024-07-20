@@ -1,4 +1,4 @@
-resource "aws_instance" "back_end" {
+resource "aws_instance" "ec2-nodes" {
   count         = length(var.component)
   ami           = "ami-041e2ea9402c46c32"
   instance_type = "t3.small"
