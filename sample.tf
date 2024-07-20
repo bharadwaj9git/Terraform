@@ -1,5 +1,5 @@
  resource "null_resource" "test" {}
-
+# variable dec nd access
 variable "x" {
   default = 10
 }
@@ -36,7 +36,7 @@ output "l" {
   value = var.map["course"]
 }
 
-
+# passing value dynamically
 variable "Y" {}
  output "Y" {
    value = var.Y
