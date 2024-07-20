@@ -5,6 +5,6 @@ fruits = {
   }
   banana={
     quantity=100
-    price=2
+    price= 20
   }
 }
