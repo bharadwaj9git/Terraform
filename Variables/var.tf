@@ -41,3 +41,8 @@ variable "D" {}
 output "D" {
   value = var.D
 }
+
+variable "env" {}
+output "env" {
+  value = var.env
+}
