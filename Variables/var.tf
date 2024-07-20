@@ -37,7 +37,7 @@ output "l" {
 }
 
 
-variable "Y" {}
-output "Y" {
-  value = var.Y
+variable "D" {}
+output "D" {
+  value = var.D
 }
