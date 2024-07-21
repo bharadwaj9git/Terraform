@@ -8,10 +8,17 @@ Name = var.name
 }
 }
 
-resource "aws_route53_record" "www" {
+resource "aws_route53_record" "dnf" {
   zone_id = var.zone_id
   name    = "${var.name}-dev.saidevops79.online"
   type    = "A"
   ttl     = 30
   records = [aws_instance.node.private_ip]
+}
+
+resource "null_resource" "provisioner"{
+  depends_on =[aws_route53_record.dnf]
+  provisioner  "local-exec" {
+    command = "sleep 120;cd /home/ec2-user/ansible_expense; ansible-playbook -i ${aws_instance.node.private_ip}, -e ansible_user=ec2-user -e ansible_password=DevOps321  -e role_name=${var.name} -e env=dev expense.yml"
+  }
 }
